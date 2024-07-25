@@ -1,4 +1,6 @@
-.sidebar {
+.sidebar,
+.active_sidebar {
+    z-index: 5;
     height: 100%;
     overflow: auto;
     width: 25%;
@@ -8,6 +10,12 @@
     flex-direction: column;
     justify-content: space-around;
     left: 0;
+    top: 0;
+    transition: 0.5s;
+    transform: translateX(0);
+}
+.sidebar {
+    transform: translateX(-200%);
 }
 .logo {
     padding: 20px;
@@ -23,10 +31,10 @@
     border-radius: 50%;
 }
 .sidebar_menu {
-    padding: 20px;
+    padding: 50px;
     padding-bottom: 50px;
 }
-a {
+.menu__link {
     display: block;
     color: white;
     text-decoration: none;
@@ -36,7 +44,7 @@ a {
     font-weight: 300;
     border-radius: 5px;
 }
-a:hover {
+.menu__link:hover {
     background-color: whitesmoke;
     color: black;
 }
@@ -44,4 +52,7 @@ a:hover {
     color: white;
     font-size: 16px;
     text-transform: capitalize;
+}
+.button_menu {
+    padding-left: 40px;
 }

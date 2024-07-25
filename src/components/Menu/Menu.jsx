@@ -4,13 +4,11 @@ import css from "./Menu.module.css"
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 
-const Menu = ({ isActive, setIsActive }) => {
-    
-    
 
+const Menu = ({isActive, setIsActive}) => {
+    
     return (
         <menu className={css.menu}>
-            
                 <button onClick = {() => setIsActive(!isActive)}className={css.button_menu}>
                     {
                         isActive ? <RxCross2  className={css.cross__icon}/> : <IoIosMenu className={css.menu__icon}/>

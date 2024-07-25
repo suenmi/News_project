@@ -12,13 +12,7 @@ import Home from "./page/Home"
 function App() {
   return (
     <>
-    <Routes>
-      <Route path='/' element={<Layot/>}>
-          <Route index element={<Home/>} />
-          <Route path='/about' element={<About/>}/>
-          <Route path='*' element={<NotFound/>}/>
-      </Route>
-    </Routes>
+    <Layot/>
     </>
   )
 }
