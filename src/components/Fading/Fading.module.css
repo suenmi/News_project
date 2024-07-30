@@ -14,9 +14,3 @@
 .fading {
     display: none;
 }
-
-@media (max-width: 1200px) {
-    .fading_active {
-        background-color: red;
-    }
-}
