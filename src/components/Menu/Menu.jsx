@@ -9,7 +9,7 @@ const Menu = ({isActive, setIsActive}) => {
     
     return (
         <menu className={css.menu}>
-                <button onClick = {() => setIsActive(!isActive)}className={css.button_menu}>
+                <button onClick = {() => setIsActive(!isActive)} className={css.button_menu}>
                     {
                         isActive ? <RxCross2  className={css.cross__icon}/> : <IoIosMenu className={css.menu__icon}/>
                     }

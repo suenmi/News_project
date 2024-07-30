@@ -12,6 +12,7 @@ import css from "./Header.module.css"
 import SideBar from "../SideBar/SideBar";
 
 import Fading from "../Fading/Fading"
+
 import MenuMedia from "../MenuMedia/MenuMedia";
 
 
@@ -23,7 +24,7 @@ const Header = () => {
         <header>
            <div className={css.header}>
             <Menu isActive={isActive} setIsActive={setIsActive}/>   
-            <MenuMedia/> 
+            <MenuMedia isActive={isActive} setIsActive={setIsActive}/> 
             <div className={css.logo_nam}>
                 <h1 className={css.logo_txt}>The World</h1>
                 <h1 className={css.logo_txt1}>News</h1>         
